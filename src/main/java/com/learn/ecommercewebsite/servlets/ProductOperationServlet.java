@@ -115,17 +115,17 @@ public class ProductOperationServlet extends HttpServlet {
 
 	private String uploadFile(Part filePart) {
 		String filename = this.generateRandomUUID() + filePart.getSubmittedFileName();
-		try (FileOutputStream fout = new FileOutputStream(
-				"C:\\Users\\V I R E N\\Desktop\\New folder\\EcommerceWebsite\\EcommerceWebsite\\src\\main\\webapp\\img\\products\\"
-						+ filename)) {
-			InputStream is = filePart.getInputStream();
-			byte[] readAllBytes = is.readAllBytes();
-			fout.write(readAllBytes);
+// 		try (FileOutputStream fout = new FileOutputStream(
+// 				"C:\\Users\\V I R E N\\Desktop\\New folder\\EcommerceWebsite\\EcommerceWebsite\\src\\main\\webapp\\img\\products\\"
+// 						+ filename)) {
+// 			InputStream is = filePart.getInputStream();
+// 			byte[] readAllBytes = is.readAllBytes();
+// 			fout.write(readAllBytes);
 
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("error occured while saving image");
-		}
+// 		} catch (Exception e) {
+// 			e.printStackTrace();
+// 			System.out.println("error occured while saving image");
+// 		}
 		return filename;
 	}
 
