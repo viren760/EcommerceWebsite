@@ -28,11 +28,14 @@
     <version>5.4.2.Final</version>
     </dependency>
 <!-- postgrey dependency -->
-   		 <dependency>
-		<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+   		 <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+	<scope>runtime</scope>
+    <version>42.2.18</version>
+</dependency>
+
 
 
 <!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
